@@ -1,3 +1,127 @@
-p{
-    color: aqua;
+body{
+
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
+/* Media query */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+.column {
+    flex: 25%;
+    padding: 20px;
+  }
+  
+@media screen and (max-width: 992px) {
+    .column {
+      flex: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .row {
+      flex-direction: column;
+    }
+}
+
+.flexiable-section{
+   display: flex;
+   margin-bottom: 50px;
+}
+
+.orange-color{
+    color: orange;
+}
+.design-home{
+   margin-left: 60px;
+   margin-top: 30px;
+    padding: 2px;
+}
+.column img{
+    margin-auto;
+    width: 70%;
+    border-radius: 400px;;
+}
+
+.button-dg{
+   
+    text-decoration: none;
+    padding: 7px 12px;
+    border: none;
+    background: linear-gradient(to right,#f75137,#F98064);
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.top-banner{
+    background-image: url(image/top-banner.png);
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+}
+.big-dream{
+    background-image: url(image/dream-bg.png);
+    background-position-x: right;
+
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+}
+h1{
+    font-weight: bold;
+}
+.card{
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 20px 40px gray ;
+    margin-bottom: 30px;
+}
+.exp{
+    background-image: url(image/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position:left;
+}
+#card-1{
+    border-left: 7px solid;
+    border-image: linear-gradient(salmon, tomato);
+    border-image-slice: 1;
+
+}
+
+#card-2{
+    border-left: 7px solid;
+    border-image: linear-gradient(blue,cyan);
+    border-image-slice: 1;
+
+}
+footer p{
+    text-align: center;
+}
+
+/*h1 font size*/
+
+h1{
+   
+    padding: 20px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    h1{
+      font-size: 36px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+
+
